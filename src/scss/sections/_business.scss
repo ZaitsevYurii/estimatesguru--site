@@ -1,0 +1,23 @@
+.business {
+   padding: 100px 0;
+   background-color: $bgSecondColor;
+
+   &__title {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+   }
+
+   &__descr {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 80%;
+      margin-bottom: 60px;
+   }
+}

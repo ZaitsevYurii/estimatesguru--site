@@ -1,0 +1,24 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+@import "base/fonts";
+@import "base/normalize";
+@import "base/scafolding";
+@import "base/base";
+
+@import "sections/header";
+@import "sections/main";
+@import "sections/about";
+@import "sections/business";
+@import "sections/use";
+@import "sections/statistic";
+@import "sections/inside";
+@import "sections/price";
+@import "sections/contact";
+@import "sections/footer";
+
+@import "components/main-link";
+@import "components/businesss__cards";
+@import "components/nav";
+@import "components/log";
+@import "components/price-cards";

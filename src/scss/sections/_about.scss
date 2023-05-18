@@ -1,0 +1,61 @@
+.about {
+   padding: 75px 258px;
+   background-color: $bgFirstColor;
+
+   @include desktop {
+      padding: 75px 35px;
+   }
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1577px) {
+         flex-direction: column;
+      }
+   }
+
+   &__content {
+      max-width: 600px;
+
+      @media screen and (max-width: 1577px) {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+
+      @include tablets {
+         font-size: 24px;
+         line-height: 30px;
+      }
+   }
+
+   &__descr {
+      margin-bottom: 35px;
+   }
+
+   &__link {
+      padding: 15px 55px;
+   }
+
+   &__image {
+      background-image: url('../img/coder.svg');
+      @include cover;
+      width: 421px;
+      height: 478px;
+
+      @include phones {
+         width: 210px;
+         height: 230px;
+      }
+   }
+}

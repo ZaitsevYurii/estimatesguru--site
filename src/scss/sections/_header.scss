@@ -1,0 +1,23 @@
+.header {
+   padding: 40px 0;
+   background-color: $bgFirstColor;
+
+   &__inner {
+      @include flexBetween;
+
+      @include phones {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__logo {
+      margin-right: 80px;
+
+      @include phones {
+         margin: 0;
+      }
+   }
+
+
+}

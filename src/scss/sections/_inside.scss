@@ -1,0 +1,43 @@
+.inside {
+   padding: 100px 164px;
+   background-color: $bgSecondColor;
+
+   @include desktop {
+      padding: 100px 100px;
+   }
+
+   @include laptop {
+      padding: 50px 50px;
+   }
+
+   &__inner {
+      max-width: 892px;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   &__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 30px;
+
+      @include laptop {
+         font-size: 23px;
+         line-height: 30px;
+      }
+   }
+
+   &__descr {
+      margin-bottom: 56px;
+   }
+
+   &__img {
+      object-fit: fill;
+   }
+
+}

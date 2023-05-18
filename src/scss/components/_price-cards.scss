@@ -1,0 +1,100 @@
+.price-cards {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+
+   @include desktop {
+      flex-direction: column;
+   }
+
+   &__item {
+      min-height: 558px;
+      width: 33%;
+      padding: 50px 35px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 12px rgba(12, 68, 204, 0.1);
+      border-radius: 6px;
+
+      @include desktop {
+         width: auto;
+      }
+
+
+   }
+
+   &__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 16px;
+   }
+
+   &__price {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 56px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 30px;
+
+      @include tablets {
+         font-size: 20px;
+         line-height: 23px;
+      }
+   }
+
+   &__link {
+      padding: 10px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 1;
+      background-color: #fff;
+      border: 1px solid #185CFF;
+      border-radius: 6px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: $mainHoverColor;
+      margin-bottom: 30px;
+
+      @include desktop {
+         padding: 10px 50px;
+      }
+
+      @include tablets {
+         padding: 10px 20px;
+      }
+
+      &:hover {
+         background-color: $mainHoverColor;
+         color: #FFFFFF;
+      }
+   }
+
+   &__descr {
+      padding-left: 32px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      position: relative;
+
+      &::before {
+         content: url('../../img/checkmark.svg');
+         position: absolute;
+         top: 60%;
+         left: 0;
+         transform: translateY(-50%);
+      }
+   }
+}

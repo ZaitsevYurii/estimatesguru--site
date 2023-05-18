@@ -1,0 +1,43 @@
+.log {
+
+   &__sign {
+      padding: 15px 26px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: $hoverColor;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+         color: $mainHoverColor;
+         border: 1px solid $mainHoverColor;
+         border-radius: 6.95455px;
+      }
+   }
+
+   &__in {
+      padding: 11px 51px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: $hoverColor;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+         color: $mainHoverColor;
+         border: 1px solid $mainHoverColor;
+         border-radius: 6.95455px;
+      }
+   }
+
+   @include laptop {
+      display: flex;
+      flex-direction: column;
+   }
+}

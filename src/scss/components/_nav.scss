@@ -1,0 +1,27 @@
+.nav {
+
+   &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 47px;
+   }
+
+   &__link {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: $mainColor;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+         color: $hoverColor;
+      }
+   }
+
+   @include laptop {
+      display: none;
+   }
+}

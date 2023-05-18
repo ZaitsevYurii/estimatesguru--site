@@ -1,0 +1,40 @@
+.use {
+   padding: 90px 0;
+
+   &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include desktop {
+         flex-direction: column;
+         gap: 50px;
+      }
+   }
+
+   &__box img {
+      @include tablets {
+         width: 320px;
+         height: 340px;
+      }
+   }
+
+   &__content {
+      max-width: 560px;
+   }
+
+   &__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 30px;
+
+      @include tablets {
+         font-size: 24px;
+         line-height: 30px;
+      }
+   }
+}

@@ -1,0 +1,168 @@
+.contact {
+   padding: 120px 120px;
+   background-color: $bgSecondColor;
+
+   &__inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 125px;
+
+      @include laptop {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__info {
+      max-width: 540px;
+   }
+
+   &__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 56px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 24px;
+
+      @include laptop {
+         font-size: 22px;
+         line-height: 20px;
+      }
+   }
+
+   &__descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+      margin-bottom: 80px;
+   }
+
+   &__form {
+      width: 445px;
+      min-height: 593px;
+
+      @include laptop {
+         width: auto;
+      }
+   }
+}
+
+.contact-item {
+   display: flex;
+   flex-direction: column;
+
+   &__descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+   }
+
+   &__link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+   }
+}
+
+.mail-link {
+   margin-bottom: 24px;
+}
+
+.form {
+   padding: 50px;
+   background: #FFFFFF;
+   box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
+   border-radius: 6px;
+
+   @include laptop {
+      padding: 20px;
+   }
+
+
+   &__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+      margin-bottom: 30px;
+
+      @include laptop {
+         font-size: 16px;
+         line-height: 20px;
+      }
+
+   }
+
+   &__name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+   }
+
+   &__lable {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: -0.015em;
+   }
+
+   input {
+      border: none;
+      border-bottom: 1px solid #9497A1;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+
+      &:hover {
+         outline: none;
+      }
+
+      &:focus {
+         outline: none;
+      }
+   }
+
+   input::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.015em;
+      color: $hoverColor;
+   }
+
+   &__btn {
+      margin: 0 auto;
+      padding: 8px 52px;
+      border: none;
+      background-color: $mainHoverColor;
+      box-shadow: 0px 12px 30px rgba(24, 92, 255, 0.18);
+      border-radius: 6px;
+      color: $mainLinkTextColor;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: all .3s ease-in-out;
+
+      &:hover {
+         background-color: $hoverColor;
+      }
+   }
+}
